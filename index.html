@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .background {
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-image: url(bgimage1.jpg),
+          linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+      }
+      .logo {
+        padding-left: 50px;
+        width: 150px;
+      }
+      .cart {
+        width: 30px;
+      }
+      .navBar {
+        display: flex;
+        align-items: center;
+        width: 85%;
+        justify-content: space-between;
+      }
+      .navBar ul li {
+        display: inline-flex;
+        margin: 0 20px;
+        position: relative;
+      }
+      .navBar ul li a {
+        text-decoration: none;
+        color: rgb(7, 84, 107);
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: rgb(231, 240, 240);
+        padding: 5px;
+      }
+      .navBar ul li:hover::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+        animation: slidein 0.5s ease-in-out;
+      }
+      @keyframes slidein {
+        0% {
+          top: 40px;
+        }
+        50% {
+          top: 30px;
+        }
+        75% {
+          top: 20px;
+        }
+        100% {
+          top: 30px;
+        }
+      }
+      .content {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 100px;
+        color: rgb(7, 84, 107);
+      }
+      .content h1 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+      }
+      .socialLinks{
+          padding-top: 50px;
+          font-size: 15px;        
+         }
+         .socialLinks a{
+             text-decoration: none;
+             padding: 10px;
+             cursor: pointer;   
+            color: rgb(7, 84, 107);     }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="navBar">
+        <img src="logof.png" alt="logo" class="logo" />
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Chanel", target="_blank">HOME</a></li>
+          <li><a href="https://www.buyma.us/brands/chanel/", target="_blank">COLLECTIONS</a></li>
+        </ul>
+        <div>
+          <a href="#"><img src="cart.png" alt="cart" class="cart" /></a>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Welcome to India's biggest fashion site!!</h1>
+        <p>
+            Enter the world of CHANEL and discover the latest in Fashion & Accessories, </br> Eyewear, Fragrance & Beauty, Fine Jewelry & Watches.
+        </p>
+        <div class="socialLinks">
+           <a href="https://www.facebook.com/chanel/", target="_blank">FACEBOOK</a>
+            <a href="https://www.instagram.com/chanelofficial/?hl=en", target="_blank">INSTAGRAM</a>
+            <a href="https://twitter.com/CHANEL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", target="_blank">TWITTER</a>
+        </div>
+      </div>
+  </body>
+</html>
