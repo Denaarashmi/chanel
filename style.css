@@ -49,7 +49,7 @@ small {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  bottom: 0;
+  bottom: -70px;
 }
 .bubbles img {
   width: 100px;
